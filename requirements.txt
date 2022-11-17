@@ -1,0 +1,5 @@
+Flask 
+marshmallow
+flask_opentracing
+jaeger_client
+python-json-logger

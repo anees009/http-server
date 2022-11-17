@@ -1,0 +1,40 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: restapi-deployment
+  labels:
+    app: restapi
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: restapi
+  template:
+    metadata:
+      labels:
+        app: restapi
+    spec:
+      containers:
+        - name: restapi
+          image: restapi-image
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 4000
+          env:
+            - name: SERVE_PORT
+              value: "4500"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: restapi-service
+spec:
+  ports:
+  - port: 5000
+    protocol: TCP
+    targetPort: 4500
+  selector:
+    app: restapi
+  type: LoadBalancer
