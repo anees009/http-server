@@ -1,5 +1,5 @@
-[Solution is available here](https://github.com/hellofreshdevtests/anees009-sre-test/blob/dev/SOLUTION.md#building-a-simple-http-api-service-and-deploying-it-on-kubernetes---minikube)
-## HelloFresh Site Reliability Engineer Test
+[Solution is available here](https://github.com/anees009/http-server/blob/master/SOLUTION.md)
+## Site Reliability Engineer Test
 
 Hello and thank you for your time.
 
@@ -11,7 +11,6 @@ We would like you to create a simple HTTP API service using Python or GoLang, th
 
 Since we love automating things, the service should be automatically deployed to Kubernetes.
 
-_Note: While we love open source here at HelloFresh, please do not create a public repo for your test! This challenge is only shared with people interviewing, and for obvious reasons, we'd like it to remain this way._
 
 ## Instructions
 
